@@ -1,15 +1,15 @@
-# Overview
------
+# Overview of the assignment
+----------------------------
 
-This repository contains all the code needed to complete the PID controller project in Udacity's Self-Driving Car Nanodegree. A proportional–integral–derivative controller (PID controller) is a control loop feedback mechanism (controller).  A PID controller continuously calculates an crosstalk error value CTE as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively) which give their name to the controller type. 
+This repository contains all the code needed to complete the PID controller project for Self-Driving Car Nanodegree. A proportional–integral–derivative controller - PID controller is a control loop feedback mechanism (controller).  A PID controller continuously calculates an crosstalk error value CTE as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively) which give their name to the controller type. 
 
-# Hyperparameter tuning/optimization
------
+# Hyperparameter tuning
+------------------------
 
 The base algorithm of the PID controller implemented in the project is based on what was introduced in the PID controller lesson. However, the hyper parameters were tuned manually to determine the effect based on the different PID components. The twiddle and gradient descent approaches were attempted but I didn't get the parameters to converge to any useful values. 
 
 # Effect of PID components
------
+--------------------------
 
 In PID, 
 P accounts for present values of the error. For example, if the error is large and positive, the control output will also be large and positive.
