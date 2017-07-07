@@ -17,6 +17,19 @@ public:
   double Ki;
   double Kd;
 
+ /*
+  * Accumulator for the integral part
+  */
+  double sum;
+  /*
+  * Accumulator for the derivative part
+  */
+  double lastCte;
+  /*
+   * CTE Differential
+   */
+  double diffCte;
+
   /*
   * Constructor
   */
