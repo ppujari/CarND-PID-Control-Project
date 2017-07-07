@@ -17,7 +17,7 @@ D accounts for possible future trends of the error, based on its current rate of
 
 The 'P' component allows the car to get close to the CTE=0 line but there is an oscillation around it. It makes the car react to the CTE value in a linear fashion.For example with a (large) value of 1.0 as seen here we observe that the control output is large (25 degree) causing an overshoot.
 
-[![SDC - PID controller p=1 ](https://github.com/ppujari/CarND-PID-Control-Project/output/pid-controller-HIGH-kp.png)]
+[![SDC - PID controller p=1 ](https://github.com/ppujari/CarND-PID-Control-Project/blob/master/output/pid-controller-HIGH-kp.png)]
 
 This is less dramatic for smaller values of 'Kp', but whenever the car encounters a corner, the CTE increases faster and this induces a violent steering correction which often results in the car going off track. With Kp(i.e. 0.001) of a smaller value, the car doesn't react fast enough, the oscillations around the center line seem to have a very low frequency. Considering the above into account, 0.1 seems to be a good start value for Kp.
 
